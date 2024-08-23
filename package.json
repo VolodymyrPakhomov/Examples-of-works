@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://kovlanproj.github.io/team-project",
+  "homepage": "https://VolodymyrPakhomov.github.io/Examples-of-works",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project/"
+    "build": "parcel build src/*.html --public-url /Examples-of-works/"
   },
   "repository": {
     "type": "git",
