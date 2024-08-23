@@ -1,0 +1,269 @@
+<button class="back_to_top" title="Scroll top">
+    <svg width="25" height="35" class="top-arrow">
+        <use href="./images/symbol-defs.svg#icon-arrow-up2">
+        </use>
+    </svg>
+</button>
+
+<!-- <a href="#" class="js-open-modal" data-modal="buy-now">Buy now</a>
+<a href="#" class="js-open-modal" data-modal="about">About</a>
+<a href="#" class="js-open-modal" data-modal="locations">Locations</a>
+<a href="#" class="js-open-modal" data-modal="franchise">Franchise</a> -->
+
+<!-- Подложка под модальным окном -->
+<div class="modal-overlay js-overlay-modal"></div>
+
+
+<!-- Модалка Buy now -->
+<div class="modal" data-modal="buy-now">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="modal__title">Buy now</p>
+    <form class="buy-now">
+        <div class="name">
+            <label for="name" class="name__label">Name</label>
+            <input type="text" name="name" id="name" class="name__input" />
+        </div>
+        <div class="tel">
+            <label for="tel" class="tel__label">Phone</label>
+            <input type="tel" name="tel" id="tel" class="tel__input" />
+        </div>
+        <div class="mail">
+            <label for="email" class="mail__label">Email</label>
+            <input type="email" name="mail" id="email" class="mail__input" />
+        </div>
+        <div class="comment">
+            <label for="comment" class="comment__label">Comment</label>
+            <textarea name="comment" id="comment" class="comment__text" placeholder="Enter text"></textarea>
+        </div>
+        <div class="checkbox">
+            <label class="policy"><input type="checkbox" name="policy" class="policy__text visually-hidden" />
+                <span class="policy__icon"></span>
+                I accept
+                <a href="./index.html" class="policy__part"> the agreement terms</a>
+            </label>
+        </div>
+        <div class="send">
+            <button type="submit" class="send__button" data-button-buy-now>
+                Send
+                <svg width="15" height="15" class="svg">
+                    <use href="./images/symbol-defs.svg#icon-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<!-- Модалка About -->
+<div class="modal modal--about" data-modal="about">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="modal-about__title">tradition and love</p>
+    <div class="field-about">
+        <p class="field-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores!
+            Expedita nostrum nihil, doloremque dicta aut ad, veritatis architecto sunt qui sint ipsa facilis
+            necessitatibus. Praesentium.</p>
+        <ul class="field-about__list">
+            <li class="field-about__item">
+                <picture>
+                    <source srcset="images/ice-cream-strawberry-webp.webp" type="image/webp">
+                    <img class="field-about__img" src="images/ice-cream-strawberry.png" alt="Полуничне морозиво">
+                </picture>
+                <p class="field-about__text field-about__text--dark">Lorem ipsum dolor sit amet. Nihil magnam
+                    praesentium nisi reprehenderit suscipit,
+                    harum facilis dolorum repellat necessitatibus doloremque rerum voluptas amet maiores!</p>
+            </li>
+            <li class="field-about__item">
+                <picture>
+                    <source srcset="images/ice-cream-chocolate-webp.webp" type="image/webp">
+                    <img class="field-about__img" src="images/ice-cream-chocolate.png" alt="Шоколадне морозиво">
+                </picture>
+                <p class="field-about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Veritatis architecto sunt qui sint ipsa facilis necessitatibus.
+                </p>
+            </li>
+            <li class="field-about__item">
+                <picture>
+                    <source srcset="images/ice-third-webp.webp" type="image/webp">
+                    <img class="field-about__img" src="images/ice-third.png" alt="Ванільне морозиво">
+                </picture>
+                <p class="field-about__text field-about__text--dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Veritatis architecto sunt qui sint ipsa facilis necessitatibus.
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Модалка Franchise -->
+<div class="modal modal--franchise" data-modal="franchise">
+
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="modal-franchise__title">Join us</p>
+
+    <div class="field-franchise">
+        <p class="field-franchise__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            perspiciatis incidunt? Quasi quod ea qui eos fuga ab molestiae quisquam! Dolorum nesciunt vel suscipit
+            placeat officia temporibus expedita consequuntur blanditiis?</p>
+
+        <label class="user-franchise">Name
+            <input class="user-franchise__input user-franchise__input--name" type="text" name="name" autofocus
+                autocomplete="off">
+        </label>
+
+        <label class="user-franchise">Mobile
+            <input class="user-franchise__input user-franchise__input--mob" type="tel" name="tel" autocomplete="off">
+        </label>
+
+        <label class="user-franchise">E-mail
+            <input class="user-franchise__input" type="email" name="email" autocomplete="off">
+        </label>
+
+        <label class="user-franchise user-franchise--comment" for="comment">Additional Information</label>
+        <textarea class="user-franchise__texterea" name="comment" id="comment-franchise" rows="10"
+            placeholder="Enter the text"></textarea>
+
+
+        <label class="checkbox-franchise">
+            <input class="checkbox-franchise__input" type="checkbox" name="">
+            <span class="checkbox-franchise__box">
+                <svg class="checkbox-franchise__icon" width="11" height="8">
+                    <use href="images/symbol-defs.svg#check"></use>
+                </svg>
+            </span>
+            I accept the <a href="./index.html" class="checkbox-franchise__link"> terms of the contract </a>
+        </label>
+
+    </div>
+    <button type="submit" class="user-franchise__button" data-button-franchise>Send
+        <svg class="user-franchise__icon" width="15" height="8">
+            <use href="./images/symbol-defs.svg#icon-icon"></use>
+        </svg>
+    </button>
+</div>
+
+<!-- Модалка Locations -->
+<div class="modal modal--locations" data-modal="locations">
+    <!-- <div class="modal-wrapper"> -->
+    <p class="modal-wrapper__title">Our locations</p>
+
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <div class="maps">
+        <!-- <div class="maps__list">
+            <div class="maps__item">
+                <iframe class="maps__frame" width="200" height="200"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.774189166257!2d-76.17404338466612!3d43.06721657914565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f33b72e86f6f%3A0xa9c7ad22178740f6!2sRoll%20Roll%20Ice%20Cream!5e0!3m2!1suk!2spl!4v1658175761758!5m2!1suk!2spl"
+                    width="450" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="maps__title-text">CAFE</p>
+                <a href="https://goo.gl/maps/53iaA1TChDRNmhvBA" target="_blank" class="maps__location link"
+                    rel="noopener nofollow noreferrer">
+                    Roll Roll Ice Cream
+                </a>
+            </div>
+
+            <div class="maps__item">
+                <iframe class="maps__frame" width="200" height="200"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5803553.576562721!2d-94.6856689453125!3d44.74478251469653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881e31b3d0a6ed45%3A0xa5d18416ad3ede9f!2sMoomers%20Homemade%20Ice%20Cream!5e0!3m2!1suk!2spl!4v1658175856025!5m2!1suk!2spl"
+                    width="450" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="maps__title-text">FOOD TRUCK</p>
+                <a href="https://goo.gl/maps/b5PxuaRxuadXwzXk7" target="_blank" class="maps__location link"
+                    rel="noopener nofollow noreferrer">
+                    Moomers Homemade Ice Cream</a>
+            </div>
+            <div class="maps__item">
+                <iframe class="maps__frame" width="200" height="200"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6056505.122715774!2d-83.73120460732342!3d41.98832309689277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0817a22c41a41%3A0xe486b860e9274e4d!2sPurity%20Ice%20Cream%20Co.!5e0!3m2!1suk!2spl!4v1658176088212!5m2!1suk!2spl"
+                    width="450" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="maps__title-text">CAFE</p>
+                <a href="https://goo.gl/maps/oCWQsWntqv6wBpJy8" target="_blank" class="maps__location link"
+                    rel="noopener nofollow noreferrer">
+                    Purity Ice Cream</a>
+            </div>
+        </div> -->
+
+        <div class="locations-slider">
+            <div class="locations-info">
+                <div class="locations-text-wrap">
+                    <p class="locations-text">
+                        <iframe class="maps__frame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6056505.122715774!2d-83.73120460732342!3d41.98832309689277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0817a22c41a41%3A0xe486b860e9274e4d!2sPurity%20Ice%20Cream%20Co.!5e0!3m2!1suk!2spl!4v1658176088212!5m2!1suk!2spl"
+                            width="340" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="maps__title-text">CAFE</p>
+                    <a href="https://goo.gl/maps/oCWQsWntqv6wBpJy8" target="_blank" class="maps__location link"
+                        rel="noopener nofollow noreferrer">
+                        Purity Ice Cream</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="locations-info">
+                <div class="locations-text-wrap">
+                    <p class="locations-text">
+                        <iframe class="maps__frame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5803553.576562721!2d-94.6856689453125!3d44.74478251469653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881e31b3d0a6ed45%3A0xa5d18416ad3ede9f!2sMoomers%20Homemade%20Ice%20Cream!5e0!3m2!1suk!2spl!4v1658175856025!5m2!1suk!2spl"
+                            width="340" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="maps__title-text">FOOD TRUCK</p>
+                    <a href="https://goo.gl/maps/b5PxuaRxuadXwzXk7" target="_blank" class="maps__location link"
+                        rel="noopener nofollow noreferrer">
+                        Moomers Homemade Ice Cream</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="locations-info">
+
+
+                <div class="locations-text-wrap">
+                    <p class="locations-text">
+                        <iframe class="maps__frame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.774189166257!2d-76.17404338466612!3d43.06721657914565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f33b72e86f6f%3A0xa9c7ad22178740f6!2sRoll%20Roll%20Ice%20Cream!5e0!3m2!1suk!2spl!4v1658175761758!5m2!1suk!2spl"
+                            width="340" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="maps__title-text">CAFE</p>
+                    <a href="https://goo.gl/maps/53iaA1TChDRNmhvBA" target="_blank" class="maps__location link"
+                        rel="noopener nofollow noreferrer">
+                        Roll Roll Ice Cream
+                    </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!-- </div> -->
+
+
+
+
+</div>
+
+<!-- Second Modal -->
+<div class="modal">
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="images/symbol-defs.svg#modal-cross"></use>
+    </svg>
+    <p class="window__text">Good! Your order is accepted! Thanks❤️</p>
+</div
